@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4 text-center">
+      <h1>Welcome to Longest-word game!</h1>
+      <h3>Here is your grid. What's your best shot?</h3>
+      <<h4><%= @grid %></h4>
+      <form action="/score" class="form-inline">
+        <div class="form-group">
+          <input type="text" class="form-control" name="attempt"></imput>
+          <input type="hidden" class="form-control" name="grid" value='<%= @grid %>'></imput>
+          <input type="hidden" class="form-control" name="start_time" value='<%= @start_time %>'></imput>
+        </div>
+         <button type="submit" class="btn btn-primary">Go</button>
+      </form>
+</<div>
+</div>
+</div>
